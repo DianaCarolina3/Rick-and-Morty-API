@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="icon" href="./assets/images/rick.png">
+  <link rel="stylesheet" href="./src/css/tablet.css" media="(min-width: 767px)">
+</head>
+
+<body>
+  <header>
+    <h1>Rick and Morty</h1>
+  </header>
+
+  <main>
+    <div class="description">
+      <img src="./assets/images/imagedescrpition.png" alt="rick and morty">
+      <p>In this site you find information about Rick and Morty, the characters and you can search the episodes of this
+        series.
+        The idea of this project is to put into practice what was learned in the JavaScript asynchronism course, in this
+        course I learned about: promises, asyn-await, callbacks, and the <a href="https://rickandmortyapi.com/">Rick and
+          Morty API</a> was used to extract the data.
+      </p>
+    </div>
+
+    <div class="episodes">
+      <h2>Search episodes</h2>
+      <div class="search-episodies">
+        <input type="number" id="episodes" placeholder="Write the episode number...">
+        <button type="submit" onclick="searchEpisodie()">search</button>
+      </div>
+      <div class="episodes-info" id="descriptionEpisodes"></div>
+    </div>
+
+    <h3 class="title-characters">Characters</h3>
+    <section id="AllCharacters" class="AllCharacters">
+    </section>
+
+    <div class="characters">
+      <h2>Search more characters...</h2>
+      <div class="search-characters">
+        <input type="text" id="characters" placeholder="Write the name character...">
+        <button type="submit" onclick="searchCharacters()">search</button>
+      </div>
+      <div class="characters-info" id="descriptionEpisodes"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Rick and Morty</p>
+    <p>All rights reserved. Design by 🧡 <a href="https://twitter.com/DianaCa80600701">@DianaCarolina</a>
+    <div class="contact">
+      <a href="https://twitter.com/DianaCa80600701"><img src="./assets/icon/icons8-twitter.svg" alt="twitter"></a>
+      <a href="https://github.com/DianaCarolina3"><img src="./assets/icon/icons8-github.svg" alt="github"></a>
+      <a href="https://www.instagram.com/diana_carolinacm/"><img src="./assets/icon/icons8-instagram.svg"
+          alt="instagram"></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>

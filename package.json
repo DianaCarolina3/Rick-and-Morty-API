@@ -1,0 +1,20 @@
+{
+  "name": "rickandmorty-api",
+  "version": "1.0.0",
+  "description": "This is a practice of what has beeb learned in the course of asynchronism javaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "callbacks",
+    "promise"
+  ],
+  "author": "Diana Carolina Campuzano Garzón <dcaroli2015@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sweetalert": "^2.1.2"
+  }
+}

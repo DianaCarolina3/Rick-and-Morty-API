@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background: #42464d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  padding: 0px 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+main {
+  padding-top: 60px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.description img {
+  width: 100%;
+  box-shadow: 0px 0px 40px -11px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  max-width: 400px;
+  max-height: 420px;
+}
+.description p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.description a {
+  color: rgb(36, 196, 36);
+  text-decoration: none;
+}
+.description a:hover {
+  text-decoration: underline;
+}
+
+.episodes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.episodes h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.search-episodies {
+  width: auto;
+  display: flex;
+}
+.search-episodies input {
+  padding: 5px 10px;
+  outline: none;
+  width: 230px;
+  height: 40px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: solid 1px rgb(44, 189, 44);
+  margin-right: -2px;
+}
+.search-episodies input:hover {
+  border: 2px solid rgb(11, 160, 11);
+}
+.search-episodies button {
+  height: 40px;
+  width: 70px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid rgb(44, 189, 44);
+  outline: none;
+  background-color: rgb(44, 189, 44);
+  color: white;
+  font-size: 1rem;
+}
+.search-episodies button:hover {
+  background: rgb(11, 160, 11);
+}
+
+.characters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.characters h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.search-characters {
+  width: auto;
+  display: flex;
+}
+.search-characters input {
+  padding: 5px 10px;
+  outline: none;
+  width: 230px;
+  height: 40px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: solid 1px rgb(44, 189, 44);
+  margin-right: -2px;
+}
+.search-characters input:hover {
+  border: 2px solid rgb(11, 160, 11);
+}
+.search-characters button {
+  height: 40px;
+  width: 70px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid rgb(44, 189, 44);
+  outline: none;
+  background-color: rgb(44, 189, 44);
+  color: white;
+  font-size: 1rem;
+}
+.search-characters button:hover {
+  background: rgb(11, 160, 11);
+}
+
+footer {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: grey;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+footer p {
+  font-size: 0.8rem;
+}
+footer p a {
+  text-decoration: none;
+  color: white;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+.contact a img {
+  padding-top: 5px;
+  margin: 0 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.title-characters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 40px 0 10px 0;
+}
+
+.AllCharacters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
+}
+.character img {
+  background-size: cover;
+  margin-top: -27px;
+  border-radius: 10px;
+}
+.character-person {
+  cursor: pointer;
+  width: 260px;
+  height: auto;
+  margin-top: -30px;
+  border: 1px solid rgb(44, 189, 44);
+  background-color: rgb(27, 177, 27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #fff;
+  padding: 7px;
+}
+.character h4 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid green;
+}
+.character p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+
+.episodes-info {
+  flex-direction: column;
+  font-size: 1rem;
+  padding: 20px 10px 10px 10px;
+  width: 300px;
+}
+.episodes-info ul {
+  padding: 5px;
+}
