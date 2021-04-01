@@ -86,6 +86,7 @@ function searchCharacters() {
   fetch(`${URL_API_CHARACTERS}${valueInfo}`)
   .then(response => response.json())
   .then(data => {
+    setTimeout(() => {
       infoCharacter.innerHTML = `
       <div class="info">
       <img src="${data.image}">
@@ -105,6 +106,7 @@ function searchCharacters() {
       if(valueInfo > 671 || valueInfo <= 0){
         infoCharacter.innerHTML = `Character no found`
       }
+    }, 200)
   })
   .catch(err => console.error('error' + err))
 }

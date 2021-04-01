@@ -72,6 +72,7 @@ main {
 .episodes p {
   font-size: 1rem;
   margin-bottom: 10px;
+  padding: 0 20px;
 }
 .search-episodies {
   width: auto;
@@ -265,4 +266,5 @@ footer p a:hover {
 }
 .info {
   padding: 10px;
+  margin: 10px;
 }
