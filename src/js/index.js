@@ -41,7 +41,7 @@ function features(valueInfo) {
         swal(`Character ${features.name}`,`
         Name: ${features.name}
         Status: ${features.status}
-        Species: ${features.species}
+        Specie: ${features.species}
         Gender: ${features.gender}
         Origin: ${features.origin.name}
         Location: ${features.location.name}
@@ -58,21 +58,55 @@ function searchEpisodie() {
   fetch(`${URL_API_EPISODES}${valueInput}`)
   .then(response => response.json())
   .then(data => {
-    infoEpidodes.innerHTML =
-        `
-        <ul>Number episode: ${data.id}</ul>
-        <ul>Name: ${data.name}</ul>
-        <ul>Air date: ${data.air_date}</ul>
-        <ul>Episode: ${data.episode}</ul>
-        `
-        if(valueInput > 41) {
-          infoEpidodes.innerHTML = `Episode no found`
-        }
-        if(!valueInput || undefined) {
-          infoEpidodes.style.display = "none"
-        } else {
-          infoEpidodes.style.display= "flex"
-        }
+    setTimeout(() => {
+      infoEpidodes.innerHTML =
+          `
+          <p><span>Number episode: </span>${data.id}</p>
+          <p><span>Name: </span>${data.name}</p>
+          <p><span>Episode: </span>${data.episode}</p>
+          <p><span>Air date: </span>${data.air_date}</p>
+          `
+          if(valueInput > 41 || valueInput <= 0) {
+            infoEpidodes.innerHTML = `Episode no found`
+          }
+          if(!valueInput || undefined) {
+            infoEpidodes.style.display = "none"
+          } else {
+            infoEpidodes.style.display= "flex"
+          }
+    }, 300)
   })
+  .catch(err => console.error('error' + err))
 }
 searchEpisodie()
+
+function searchCharacters() {
+  valueInfo = document.getElementById('characters').value
+  infoCharacter = document.getElementById('descriptionCharacters')
+  fetch(`${URL_API_CHARACTERS}${valueInfo}`)
+  .then(response => response.json())
+  .then(data => {
+      infoCharacter.innerHTML = `
+      <div class="info">
+      <img src="${data.image}">
+      <p><span>Number Character: </span>${data.id}</p>
+      <p><span>Name: </span>${data.name}</p>
+      <p><span>Status: </span>${data.status}</p>
+      <p><span>Specie: </span>${data.species}</p>
+      <p><span>Gender: </span>${data.gender}</p>
+      <p><span>Type: </span>${data.type}</p>
+      </div>
+      `
+      if(!valueInfo || undefined){
+        infoCharacter.style.display = 'none'
+      } else {
+        infoCharacter.style.display = "flex"
+      }
+      if(valueInfo > 671 || valueInfo <= 0){
+        infoCharacter.innerHTML = `Character no found`
+      }
+  })
+  .catch(err => console.error('error' + err))
+}
+searchCharacters()
+

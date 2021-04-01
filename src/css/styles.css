@@ -67,7 +67,11 @@ main {
 }
 .episodes h2 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.episodes p {
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 .search-episodies {
   width: auto;
@@ -111,7 +115,7 @@ main {
 }
 .characters h2 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .search-characters {
   width: auto;
@@ -231,6 +235,34 @@ footer p a:hover {
   padding: 20px 10px 10px 10px;
   width: 300px;
 }
-.episodes-info ul {
+.episodes-info p {
   padding: 5px;
+}
+.episodes-info span {
+  color: green;
+}
+
+.characters p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  padding: 0px 10px;
+}
+
+.characters-info {
+  border: 1px solid green;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  margin: 20px;
+  border-radius: 10px;
+}
+.characters-info span {
+  color: green;
+}
+.characters-info img {
+  border-radius: 10px;
+}
+.info {
+  padding: 10px;
 }
