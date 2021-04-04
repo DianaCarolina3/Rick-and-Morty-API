@@ -1,2 +1,3 @@
 # Rick-and-Morty-API
-This is a proyect where I practice JavaScript promise
+
+The idea of this project is to put into practice what was learned in the JavaScript asynchronism course, in this course I learned about: promises, asyn-await, callbacks, and the Rick and Morty API was used to extract the data.
