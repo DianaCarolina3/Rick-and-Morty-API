@@ -3,13 +3,13 @@
 The idea of this project is to put into practice what was learned in the JavaScript asynchronism course, in this course I learned about: promises, asyn-await, callbacks, and the Rick and Morty API was used to extract the data.
 
 ## Tools:
- -JavaScript
- -HTML
- -CSS
- -vercel
- -Bootstrap
- -Rest API
- -API public (https://rickandmortyapi.com/)
+ - JavaScript
+ - HTML
+ - CSS
+ - Vercel
+ - Bootstrap
+ - Rest API
+ - API public (https://rickandmortyapi.com/)
 
 https://rick-and-morty-api-dianacarolina3.vercel.app
 
